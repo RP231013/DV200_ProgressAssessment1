@@ -47,16 +47,23 @@ const Chat = () => {
         label: 'Number of Wins',
         data: [15, 19, 15, 18, 5],
         backgroundColor: [
-          'rgba(255, 0, 0, 1)',
+          'rgba(2, 0, 0, 1)',
         ],
       }],
     },
     raceWins: {
       labels: ['Monaco', 'Italian GP', 'British GP', 'Belgian GP', 'Singapore GP'],
+      
       datasets: [{
         label: 'Number of Wins',
+        fill: true,
         data: [15, 19, 15, 18, 5],
-        backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgb(255, 99, 132)',
+        pointBackgroundColor: 'rgb(255, 99, 132)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(255, 99, 132)'
       }],
     },
     carsManufactured: {
@@ -64,7 +71,7 @@ const Chat = () => {
       datasets: [{
         label: 'Cars Manufactured',
         data: [8000, 8100, 8400, 9000, 9200],
-        backgroundColor: 'rgba(0, 123, 255, 0.5)',
+        backgroundColor: 'rgba(255, 0, 0, 0.7)',
       }],
     },
     revenue: {
@@ -72,7 +79,12 @@ const Chat = () => {
       datasets: [{
         label: 'Revenue (in millions)',
         data: [2900, 3100, 3400, 3600, 4000],
-        backgroundColor: 'rgba(40, 167, 69, 0.5)',
+        backgroundColor: 'rgba(255, 99, 132, 0.2)', // Light red with some transparency
+        borderColor: 'rgba(255, 99, 132, 1)',       // Solid red
+        pointBackgroundColor: 'rgba(255, 99, 132, 1)', // Solid red for points
+        pointBorderColor: '#fff',                     // White border for points
+        pointHoverBackgroundColor: '#fff',            // White hover color for points
+        pointHoverBorderColor: 'rgba(255, 99, 132, 1)'
       }],
     },
     popularEngines: {
@@ -80,7 +92,7 @@ const Chat = () => {
       datasets: [{
         label: 'Number of Models',
         data: [5, 3, 2],
-        backgroundColor: ['rgba(255, 159, 64, 0.2)', 'rgba(255, 205, 86, 0.2)', 'rgba(54, 162, 235, 0.2)'],
+        backgroundColor: ['rgba(235, 0, 0, 0.8)', 'rgba(255, 0, 0, 0.5)', 'rgba(255, 0, 0, 0.1)'],
       }],
     }
   };
@@ -119,13 +131,13 @@ const raceWinsOptions = {
   scales: {
     r: {
       angleLines: {
-        color: 'antiquewhite', // Change angle lines color
+        color: 'antiquewhite', 
       },
       grid: {
-        color: 'antiquewhite', // Change grid lines color
+        color: 'antiquewhite', 
       },
       pointLabels: {
-        color: 'antiquewhite', // Change point labels color
+        color: 'antiquewhite', 
       },
     },
   },
@@ -188,10 +200,10 @@ const popularEnginesOptions = {
       
       
       <div className="chartContainerSpanThree"><Bar data={data.fastestCars} options={fastestCarsOptions} /></div>
-      <div className="chartContainerSpanThree"><Line data={data.revenue} options={raceWinsOptions} /></div>
-      <div className="chartContainerSpanTwo"><Pie data={data.popularEngines}  options={carsManufacturedOptions}/></div>
-      <div className="chartContainerSpanTwo"><Radar data={data.raceWins} options={revenueOptions} /></div>
-      <div className="chartContainerSpanTwo"><Doughnut data={data.carsManufactured} options={popularEnginesOptions} /></div>
+      <div className="chartContainerSpanThree"><Line data={data.revenue} options={revenueOptions} /></div>
+      <div className="chartContainerSpanTwo"><Pie data={data.popularEngines}  options={popularEnginesOptions}/></div>
+      <div className="chartContainerSpanTwo"><Radar data={data.raceWins} options={raceWinsOptions} /></div>
+      <div className="chartContainerSpanTwo"><Doughnut data={data.carsManufactured} options={carsManufacturedOptions} /></div>
       </div>
     </div>
     
