@@ -1,17 +1,17 @@
 /* Import for cool font */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 body {
   margin: 0;
+  background-color: #1d1d1d;
+  /* overflow-y: hidden; */
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: antiquewhite;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

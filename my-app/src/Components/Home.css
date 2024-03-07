@@ -1,3 +1,58 @@
 .homePageContent{
+    height: 100vh;
+    width: 85vw;
+    background-image: url('../Assets/bg.jpg');
+    background-position: center;
+    background-size:cover;
+    margin-top: 0px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.homePageContent p{
+    margin-top: 0px;
+}
+
+.home-container {
+    background-color: #1d1d1d;
+    color: antiquewhite;
+    padding: 20px;
+}
+
+
+.bg-dark {
+    background-color: #1d1d1d !important; 
+}
+
+
+.card-title, .card-text, .list-group-item {
+    color: antiquewhite !important; 
+}
+
+.headerCol{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.carCards{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
+}
+
+.carCardsContainer{
+    padding-top: 0px;
+}
+
+.ferrariListContainer{
+    
+    margin-left: 10px;
+    background: rgba(15, 14, 14, 0.6);
+    border-radius: 30px;
+    padding: 20px;
 }
