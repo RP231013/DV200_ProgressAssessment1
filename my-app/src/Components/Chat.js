@@ -79,11 +79,11 @@ const Chat = () => {
       datasets: [{
         label: 'Revenue (in millions)',
         data: [2900, 3100, 3400, 3600, 4000],
-        backgroundColor: 'rgba(255, 99, 132, 0.2)', // Light red with some transparency
-        borderColor: 'rgba(255, 99, 132, 1)',       // Solid red
-        pointBackgroundColor: 'rgba(255, 99, 132, 1)', // Solid red for points
-        pointBorderColor: '#fff',                     // White border for points
-        pointHoverBackgroundColor: '#fff',            // White hover color for points
+        backgroundColor: 'rgba(255, 99, 132, 0.2)', 
+        borderColor: 'rgba(255, 99, 132, 1)',       
+        pointBackgroundColor: 'rgba(255, 99, 132, 1)', 
+        pointBorderColor: '#fff',                     
+        pointHoverBackgroundColor: '#fff',            
         pointHoverBorderColor: 'rgba(255, 99, 132, 1)'
       }],
     },
